@@ -1,0 +1,42 @@
+.body{
+    background: rgb(218, 218, 218);
+    
+}
+
+
+.tilesp{
+    padding: 0 12px;
+    margin: 0 12px;
+  display: flex;
+  text-align: center;
+  gap: 12px;
+  width: 100%;
+  height: 40px;
+  font-size: 20px;
+  color:rgb(15, 28, 24);
+
+}
+
+.divTodo_list{
+    margin: 0 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 2px solid  rgb(162, 194, 185);
+    font-size: 15px;
+
+
+}
+
+.ball{
+   width: 20px;
+   height: 20px;
+   border-radius: 50%;
+   margin: 0 4px;
+   border: 2px solid rgba(0, 0, 0, 0.469);
+
+}
+
+.clickBall{
+    background-color: rgb(162, 194, 185) ;
+}
