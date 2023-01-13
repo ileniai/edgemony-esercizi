@@ -1,0 +1,53 @@
+body{
+  height: 100vh;
+  background: rgb(172, 171, 171);
+  
+}
+
+h1{
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-size: 75px;
+  background: rgb(2, 0, 28);
+  background: linear-gradient(177deg, rgb(2, 0, 32) 0%,
+   rgba(73,73,73,1) 100%, rgba(0,212,255,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+.carousel_img{
+    width: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    
+}
+
+img{
+    width: 50%;
+    display:flex;
+    border-radius: 100%;
+    
+}
+
+
+.pointerOne{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+}
+
+.pointerTwo{
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+}
+
+.pointerThree{
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    border-color: rgb(40, 47, 63);
+}
