@@ -1,0 +1,81 @@
+//Primo esercizio
+    
+const productsList = document.querySelector(".products");
+const hamburgerBtn = document.querySelector(".hamburger");
+const menu = document.querySelector(".menu");
+const paragrafoErr = document.createElement("p");
+    
+    fetch("https://api.escuelajs.co/api/v1/products")
+    .then(res => res.json())
+    .then(data =>
+    data.forEach(element => {
+        console.log(element)
+      cardCreator(element);
+    })
+  )
+  .catch(e => {
+    paragrafoErr.textContent = "C'è stato un errore!!"
+    console.log(e)
+  });
+    
+    
+  const cart= [];
+  
+  hamburgerBtn.addEventListener("click", () => {
+    menu.classList.toggle("show");
+  });
+
+    const cardCreator = item => {
+    const cardEl = document.createElement("div");
+    cardEl.className = "card";
+  
+    const imgEl = document.createElement("img");
+    imgEl.setAttribute("src", item.images[0]);
+    imgEl.setAttribute("alt", "Attention!!");
+  
+    const h1El = document.createElement("h1");
+    h1El.className = "title";
+    h1El.textContent = item.title.slice(0, 10);
+  
+    const priceEl = document.createElement("p");
+    priceEl.className = "price";
+    priceEl.textContent = item.price;
+  
+    const descEl = document.createElement("p");
+    descEl.className = "description";
+    descEl.textContent = item.description.slice(0, 30);
+  
+    const addBtn = document.createElement("button");
+    addBtn.textContent = "Aggiungi al Carrello";
+  
+    addBtn.addEventListener("click", () => {
+      cart.push(item);
+      alert("Hai aggiunto il prodotto")
+      addProducts()
+      
+    });
+  
+    cardEl.append(imgEl, h1El, priceEl, descEl, addBtn);
+    productsList.appendChild(cardEl);
+  };
+
+  const addProducts = () => {
+    menu.innerHTML = "";
+    cart.forEach((item) => {
+        const divEl =document.createElement("div");
+        divEl.className = "Pippo";
+        const paraEl = document.createElement("p");
+        paraEl.className = "Pluto";
+        paraEl.textContent = item.title + " € " + item.price 
+
+        divEl.appendChild(paraEl)
+        menu.appendChild(divEl)
+    }) 
+  }
+
+
+
+
+
+
+  
