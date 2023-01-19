@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="posts.js" type="module"></script>
+</head>
+<body>
+    <header>
+        <h1 class="titolo">SERIE TV</h1>
+        <a href="index.html">Home</a>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="tendina"></div>
+    </header>
+    <section class="container">
+        <div class="hero">
+            <img id="img-1" class="show" src="img/serie-tv-streaming.jpeg" alt="images" />
+            <img id="img-2" src="img/Migliori-serie-da-guardare.jpeg" alt="images" />
+            <img id="img-3" src="img/serie-tv-imparare-inglese.jpeg" alt="images" />
+        </div>
+        <div class="controls">
+            <div id="btn-1" class="btn active"></div>
+            <div id="btn-2" class="btn"></div>
+            <div id="btn-3" class="btn"></div>
+
+        </div class="forms">
+        <div>
+            <div class="formProducts"></div>
+            <!--Aggiungo i prodotti-->
+            <h3 class="subtitle">Aggiungi i tuoi prodotti</h3>
+            <form id="postForm">
+                <div class="listForm">
+                    <label for="title">Inserisci il titolo</label>
+                    <input name="title" type="text" id="title" required/>
+                </div>
+
+                <div class="listForm">
+                    <label for="price">Inserisci il prezzo</label>
+                    <input name="price" type="text" id="price" required/>
+                </div>
+
+                <div class="listForm">
+                    <label for="category">Inserisci una categoria</label>
+                    <input name="category" type="number" min="1" id="category" required />
+                </div>
+
+                <div class="listForm">
+                    <label for="image">Inserisci una immagine</label>
+                    <input name="image" type="text" placeholder="put an correct URL image" id="image" required/>
+                </div>
+
+                <div class="listForm">
+                    <label for="description">Inserisci una descrizione</label>
+                    <textarea name="description" id="description" required></textarea>
+                </div>
+                <input type="submit" value="INVIA">
+            </form>
+
+                <div class="formProducts">
+                    <!--aggiungo la categoria-->
+                  <h3 class="subtitle">Aggiungi le tue categorie</h3>
+                  <form id="formCategory">
+
+                    <div class="listForm">
+                        <label for="name">Nome della categoria</label>
+                        <input name="name" type="text" id="categoryName" required/>
+                    </div>
+
+                    <div class="listForm">
+                        <label for="image">Categoria Immagine</label>
+                        <input name="image" type="url" id="categoryImg" required/>
+                    </div>
+
+                    <input type="submit" value="INVIA">
+            </form>
+        </div>
+        </div>
+    </section>
+    <footer></footer>
+    
+</body>
+</html>
