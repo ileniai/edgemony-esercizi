@@ -20,8 +20,4 @@ const cardCreator = (data) => {
 };
 
 
-
-
-
-
 export{cE, qS, cardCreator}

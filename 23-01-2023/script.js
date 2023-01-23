@@ -11,21 +11,11 @@
 import {cE,qS, cardCreator} from "./utils.js"
 import {GET} from "./api.js"
 
-//ENDPOINT QUOTES
-
-//const data = {
-         // id:1,
-          //quote:"Life isn’t about getting and having, it’s about giving and being.",
-          //author:"Kevin Kruse"
-//       }
-       
 const bodyEl = qS("body");
 const containerEl = cE("div");
+containerEl.className = "container";
 
 bodyEl.appendChild(containerEl);
 
 GET("quotes").then((data) => 
-data.quotes.map((quote) => containerEl.appendChild(cardCreator(quote)))
-);
-
-
+containerEl.appendChild (cardCreator(data.quotes[1])));
