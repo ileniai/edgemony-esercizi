@@ -1,0 +1,11 @@
+.containeir{
+    padding:12px 20px;
+    border:1px solid black;
+    width: 400px;
+    border-radius: 8px;
+}
+
+.firstName{
+    text-align: center;
+    color:red;
+}
