@@ -1,11 +1,12 @@
-.containeir{
-    padding:12px 20px;
-    border:1px solid black;
-    width: 400px;
+.users{
+    border:2px solid black;
     border-radius: 8px;
+    padding:12px 20px;
+    width: 400px;
+    margin-bottom: 8px;
 }
 
 .firstName{
     text-align: center;
-    color:red;
+    color:rgba(255, 0, 0, 0.481);
 }

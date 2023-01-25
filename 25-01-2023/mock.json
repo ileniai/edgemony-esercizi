@@ -1,0 +1,35 @@
+ {
+        "id": 1,
+        "products": [
+        {
+        "id": 2,
+        "title": "tonico viso 100ml",
+        "price": 20,
+        "quantity": 3
+        },
+        {
+        "id": 3,
+        "title": "crema viso giorno-notte 75ml",
+        "price": 29,
+        "quantity": 2 
+        },
+        {
+        "id": 4,
+        "title": "Machera viso 100ml",
+        "price": 40,
+        "quantity": 2
+        },
+        {
+        "id": 5,
+        "title": "siero viso ristrutturante",
+        "price": 50,
+        "quantity": 1
+        },
+        {
+        "id": 6,
+        "title": "Set skin care donna",
+        "price": 60,
+        "quantity": 2
+        }
+        ]
+    }  

@@ -5,9 +5,9 @@ const cardCreator = (data) => {
     const containerEl = cE ("div");
     const containerTextEl = cE ("div");
     const firstNameEl = cE ("h1");
-    const lastNameEl = cE ("h3");
-    const ageEl = cE ("span");
-    const phoneEl = cE ("span");
+    const lastNameEl = cE ("p");
+    const ageEl = cE ("p");
+    const phoneEl = cE ("p");
     const userNameEl = cE ("h3");
 
 
