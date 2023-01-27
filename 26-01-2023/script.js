@@ -20,7 +20,7 @@ bodyEl.appendChild(wrapperEl);
 wrapperEl.append(titleEl, imgEl, buttonEl)
 
 
-let countDown = 5;
+let countDown = 6;
 
 const contDownOne = setInterval(() => {
     if (countDown === 0) {
