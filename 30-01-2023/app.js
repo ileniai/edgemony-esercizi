@@ -7,9 +7,9 @@ const server = http.createServer((req, res) => {
 
 //imposto i percorsi
 
-    if(req.url === `/`){
+    if(req.url === `/`)
         res.end(`Home`)
-    }
+    
     
    else if(req.url === `/studenti`)
     res.end(`pagina studenti`)
@@ -25,3 +25,6 @@ const server = http.createServer((req, res) => {
         res.end(`pagina non trovata`)
     }
 })
+
+//scelta di una porta sulla quale lavorare
+server.listen(3000);
