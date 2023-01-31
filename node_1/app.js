@@ -10,14 +10,11 @@ const server = http.createServer((req, res) => {
     if(req.url === `/`)
         res.end(`Home`)
     
-    
    else if(req.url === `/studenti`)
     res.end(`pagina studenti`)
-   
 
    else if(req.url === `/corsi`)
     res.end(`pagina dedicata ai corsi`)
-
 
     else{
         //codice di errore per risorsa non trovato
