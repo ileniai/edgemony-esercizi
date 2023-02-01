@@ -1,0 +1,12 @@
+{
+  "name": "esercizio_node_01-02-2023",
+  "version": "1.0.0",
+  "description": "la mia rete",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon blog.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
