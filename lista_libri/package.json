@@ -1,0 +1,19 @@
+{
+  "name": "esercitazioni-cb6",
+  "version": "1.0.0",
+  "description": "lista_libri",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ileniai/edgemony-esercizi.git"
+  },
+  "author": "Ilenia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ileniai/edgemony-esercizi/issues"
+  },
+  "homepage": "https://github.com/ileniai/edgemony-esercizi#readme"
+}

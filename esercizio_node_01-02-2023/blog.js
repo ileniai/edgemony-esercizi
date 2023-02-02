@@ -45,7 +45,7 @@ if(req.url ==='/ARTICOLI'){
     res.write(`${utenti}`)
     res.end(utenti)
 }else {
-    res.writeHead(200, {"Content-Type": "text/plain"})
+    res.writeHead(404, {"Content-Type": "text/plain"})
     res.write('Pagina non trovata');
 }
 })

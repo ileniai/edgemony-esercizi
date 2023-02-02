@@ -15,6 +15,7 @@ import {qS, cE, tvCardGen} from "./utils.js"
 
 const topRatedEl = qS (".top_rated");
 
-GET("tv", "top_rated")
+GET("tv", "top_rated", "most_popular")
 .then((data) => data.results.map((tv) =>topRatedEl.append(tvCardGen(tv)))
 );
+
