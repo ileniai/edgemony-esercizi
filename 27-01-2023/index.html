@@ -9,13 +9,25 @@
     <script src="./script.js" type="module"></script>
 </head>
 <body>
-    <nav></nav>
-    <main class="movies">
-      <h2>Top Rated</h2>
+    <nav class="navbar">
+      <div class="search-container" id="search-container">
+        <input type="text" name="search" class="search-input" id="search" placeholder="search"/>
+          <label for="search"></label>
+          <button class="search-btn">Vai</button>
+      </div>
+    </nav>
+      <div class="container">
+        <h2>Top Rated</h2>
       <section class="top_rated"></section>
-      <h2>Most Popular</h2>
-      <section class="most-popular"></section>
-    </main>
+      </div>
+      <div class="container">
+        <h2>Most Popular</h2>
+      <section class="most_popular"></section>
+      </div>
+      <div class="container">
+        <h2>Airing Today</h2>
+      <section class="airing_today"></section>
+      </div>
     <footer></footer>
     <div class="modal">
       <div class="overlay"></div>

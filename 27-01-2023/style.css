@@ -1,20 +1,37 @@
 
-     body{
+  body{
      background-color: rgba(0, 0, 0, 0.931);
     }
 
-    .movies{
-     color:white;
-     margin: 10px 4%;
+    .container{
+      color:white;
+      margin: 20px 4%;
     }
     
   
-  .top_rated {
-    border:2px solid red;
+  .top_rated,
+  .most_popular,
+  .airing_today {
     display: flex;
     gap: 10px;
     padding: 14px;
     overflow-x: auto;
+  }
+
+  .tv{
+    cursor: pointer;
+    filter:grayscale(0.75);
+    transition: all 0.35s;
+  }
+
+  .tv:hover{
+    cursor: pointer;
+    filter:grayscale(0);
+    transform: scale(1.1);
+  }
+
+  .tv{
+    transform: scale(0.9);
   }
 
   img {
@@ -24,3 +41,5 @@
     border-radius: 12px;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.35);
   }
+
+  
