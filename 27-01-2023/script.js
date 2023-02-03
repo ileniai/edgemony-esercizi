@@ -7,15 +7,15 @@
  //popular o top rated o entrambe, 
 //e visaulizzare a schermo con uno stile a piacere.
 
-//import { GET } from "./api.js";
-//import { qS, qSA, movieCardGen, modalGen } from "./utils.js";
-
-import { GET} from "./api.js";
+import { GET, searchTvShow} from "./api.js";
 import {qS, cE, tvCardGen} from "./utils.js"
 
 const topRatedEl = qS ('.top_rated')
-const mostPopularEl = qS ('.most_popular')
+const popularEl = qS ('.popular')
 const airingTodayEl = qS ('.airing_today')
+const buttonEl = qS('.search-btn')
+const serchEl = qS('.search-input')
+
 
 GET('tv', 'top_rated', '')
 .then((data) => {
@@ -23,10 +23,10 @@ GET('tv', 'top_rated', '')
     data.results.map((tv) =>topRatedEl.append(tvCardGen(tv)))
 });
 
-GET('tv', 'most_popular', '')
+GET('tv', 'popular', '')
 .then((data) => {
-    console.log(data, 'most_popular')
-    data.results.map((tv) =>mostPopularEl.append(tvCardGen(tv)))
+    console.log(data, 'popular')
+    data.results.map((tv) =>popularEl.append(tvCardGen(tv)))
 });
 
 GET('tv', 'airing_today', '')
@@ -34,6 +34,29 @@ GET('tv', 'airing_today', '')
     console.log(data, 'airing_today')
     data.results.map((tv) =>airingTodayEl.append(tvCardGen(tv)))
 });
+
+let serchedValue = ''
+
+serchEl.addEventListener('input',(element)=>{
+    serchedValue=element.target.value;
+    serchedValue=serchedValue.toLowerCase();
+})
+
+buttonEl.addEventListener('click',()=>{
+    searchTvShow(serchedValue).then((data)=>{
+        if(serchedValue != ''){
+            popularEl.textContent = '';
+        }
+        data.results.map((element)=>{
+            if(element.name.toLowerCase().includes(serchedValue)){
+                popularEl.append(tvCardGen(element))
+            }
+        })
+        
+    })
+})
+
+
 
 
 

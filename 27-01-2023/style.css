@@ -10,7 +10,7 @@
     
   
   .top_rated,
-  .most_popular,
+  .popular,
   .airing_today {
     display: flex;
     gap: 10px;
