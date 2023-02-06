@@ -17,7 +17,7 @@
 
   .container{
     display:flex;
-    justify-content: flex-start;
+    justify-content: space-around;
   }
   
 
@@ -30,12 +30,12 @@
 }
 
 .title_card{
-    /*display: flex;
+    display: flex;
     flex-direction: column;
     text-align: left;
     font-size: large;
     width: 250px;
-    color:rgb(17, 107, 17);*/
+    color:rgb(17, 107, 17);
 }
 
 .price_card{

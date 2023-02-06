@@ -4,10 +4,12 @@ const express = require('express')
 const app = express()//qui viene incluso il server
 const PORT = 8080
 
-//risolutore per temmplate statico
-//vado a localizzare i percorsi statici
-//uso il metodo static che è il middleware per le risorse statiche
-//use introduce l'uso dei middlewares
+/*risolutore per temmplate statico
+vado a localizzare i percorsi statici
+uso il metodo static che è il middleware per le risorse statiche
+use introduce l'uso dei middlewares
+qualsiasi middleware che sia static o uno che creo io vengono
+sempre invocate da USE*/
 app.use(express.static('public'));
 
 app.get('/', (req, res)=>{
