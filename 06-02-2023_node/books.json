@@ -1,4 +1,4 @@
-const products =[
+[
     {
     "id": 1,
     "title": "Guerra e pace",
@@ -38,8 +38,9 @@ const products =[
     "description": "Un viaggio nelle profondità della mente umana...",
     "price": 39,
     "category": "opera"
+    
       }
     ]
 
-    module.exports = {products}
+
     

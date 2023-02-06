@@ -2,9 +2,9 @@
 const express = require('express')
 //importo autorizzazione
 const authorize = require('./auth')
-//const path = require('path')
+const path = require('path')
 //importo json
-const {products} = require('./books')
+const books = require('./books.json')
 
 //creo l'applicazione col supporto di Express
 const app = express()
@@ -15,17 +15,17 @@ app.use(express.static('public'))
 
 //ROUTING BASE
 app.get('/', (req, res)=>{
-    res.sendFile(__dirname, + '/public/index.html')
+    res.sendFile (path.resolve(__dirname, + '/public/index.html'))
 })
 
 
 app.get('/api/books',(req, res)=>{
-    res.json(products)
+    res.json(books)
 })
 
 
 app.get('/api/books/:product', authorize,(req, res)=>{
-    const firstProduct = products.map((product) =>{
+    const firstProduct = books.map((product) =>{
         const {id, title, author} = product
         return {id, title, author}
     })
