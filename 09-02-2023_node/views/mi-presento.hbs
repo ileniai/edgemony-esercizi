@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{titolo}}</title>
+</head>
+<body>
+     {{>header}}
+   <form action="'login" method="POST">
+    <label for="">Name</label>
+    <input type="text" name="name" placeholder="name" />
+    <label for="">Surname</label>
+    <input type="text" name="surname" placeholder="surname" />
+    <label for="">My Number</label>
+    <input type="text" name="number" placeholder="number" />
+    <label for="">My email</label>
+    <input type="text" name="email" placeholder="email" />
+    <button type="submit">invia</button>
+   </form>
+    <br>
+    {{> hero }}
+    <br>
+    {{>footer}}
+</body>
+</html>

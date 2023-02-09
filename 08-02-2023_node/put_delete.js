@@ -40,8 +40,6 @@ app.put('/api/articoli/:id',(req,res)=>{
 })
 
 
-
-
 //metodo DELETE in cui elimino l'intero elemento con id 5
 app.delete('/api/articoli/:id',(req,res)=>{
     const object = articoli.find((object)=> object.id === Number (req.params.id))
