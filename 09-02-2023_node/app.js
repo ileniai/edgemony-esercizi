@@ -30,7 +30,6 @@ app.get('/',(req,res)=>{
     })
 })
 
-
 app.get('/about',(req,res)=>{
     res.render('about',{
         titolo:'esercitazione_node'
@@ -47,6 +46,18 @@ app.get('/login',(req,res)=>{
     res.render('login',{
         titolo:'Login'
     })
+})
+
+app.post('/login',(req,res)=>{
+    const{name}=req.body
+
+    if(name){
+        res.render('login',{
+            message:`Con le mani ciao ciao ${name}`})
+    }else{
+        res.status(400)
+        .send('Inserisci il tuo nome')
+    }
 })
 
 
