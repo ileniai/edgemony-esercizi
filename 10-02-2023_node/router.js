@@ -36,4 +36,9 @@ router.get('/web-design',(req,res)=>{
     })
 })
 
+
+router.get('/*',(req,re)=>{
+    res.render('404')
+})
+
 module.exports = router
