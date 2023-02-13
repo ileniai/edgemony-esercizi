@@ -2,7 +2,7 @@ const express = require('express')
 const hbs = require('hbs')
 const session = require('cookie-session')
 const bodyParser = require('body-parser')
-//importo il router
+//importo il routers
 const router = require('./router')
 const app = express()
 const PORT = 4040
