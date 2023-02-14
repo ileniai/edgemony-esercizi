@@ -1,0 +1,129 @@
+            //LOG DELLE QUERY ESEGUITE
+
+use library
+'switched to db library'
+db.createCollection('movies')
+{ ok: 1 }
+
+            //CREAZIONE JSON
+
+db.movies.insertMany([
+  {'titolo':'Una notte da leoni',
+   'categoria':'commedia',
+   'data di uscita':'19 giugno 2009',
+   'regista':'Todd Philips',
+   'keywords':['streaming','cinema']
+},
+  {'titolo':'The call',
+   'categoria':'Thriller/giallo',
+   'data di uscita':'17 settembre 2013',
+   'regista':'Brad Anderson',
+   'keywords':['streaming','cinema']
+},
+  {'titolo':'Io vi troverò',
+   'categoria':'azione/trhiller',
+   'data di uscita':'14 agosto 2008',
+   'regista':'Piere Morel',
+   'keywords':['streaming','cinema']
+},
+  {'titolo':'Cena con delitto',
+   'categoria':'mistero',
+   'data di uscita':'5 dicembre 2019',
+   'regista':'Rian Johnson',
+   'keywords':['streaming','cinema']
+},
+  {'titolo':'Il miglio verde',
+   'categoria':'dramatico',
+   'data di uscita':'10 marzo 2000',
+   'regista':'Frank Darabont',
+   'keywords':['streaming','cinema']
+},
+  {'titolo':'Avatar',
+   'categoria':'sci-fi',
+   'data di uscita':'14 dicembre 2022',
+   'regista':'James Cameron',
+   'keywords':['streaming','cinema']
+}
+])
+
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId("63eb9bffe69ce777b84ae33e"),
+    '1': ObjectId("63eb9bffe69ce777b84ae33f"),
+    '2': ObjectId("63eb9bffe69ce777b84ae340"),
+    '3': ObjectId("63eb9bffe69ce777b84ae341"),
+    '4': ObjectId("63eb9bffe69ce777b84ae342"),
+    '5': ObjectId("63eb9bffe69ce777b84ae343")
+  }
+}
+            //MIDIFCA DI UN ELEMENTO
+
+db.movies.updateOne({titolo:'Cena con delitto'},
+{
+  $set:{
+    categoria:'mistero/thriller'
+  }
+}
+)
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+
+            //VERIFICO QUANTI DOCUMENTI CI SONO
+
+db.movies.countDocuments()
+6
+
+            //ESTRAGGO DOCUMENTO 
+
+db.movies.findOne({titolo:'Una notte da leoni'})
+{
+  _id: ObjectId("63eb9bffe69ce777b84ae33e"),
+  titolo: 'Una notte da leoni',
+  categoria: 'commedia',
+  'data di uscita': '19 giugno 2009',
+  regista: 'Todd Philips',
+  keywords: [
+    'streaming',
+    'cinema'
+  ]
+}
+
+            //ESTRAGGO DOCUMENTO CON LIMITE
+
+db.movies.find().limit(2)
+{
+  _id: ObjectId("63eb9bffe69ce777b84ae33e"),
+  titolo: 'Una notte da leoni',
+  categoria: 'commedia',
+  'data di uscita': '19 giugno 2009',
+  regista: 'Todd Philips',
+  keywords: [
+    'streaming',
+    'cinema'
+  ]
+}
+{
+  _id: ObjectId("63eb9bffe69ce777b84ae33f"),
+  titolo: 'The call',
+  categoria: 'Thriller/giallo',
+  'data di uscita': '17 settembre 2013',
+  regista: 'Brad Anderson',
+  keywords: [
+    'streaming',
+    'cinema'
+  ]
+}
+
+            //CERCO UN DATO MOSTRANDO UN SOLO CAMPO
+
+db.movies.find({titolo: 'Avatar'}, {regista:'James Cameron'})
+{
+  _id: ObjectId("63eb9bffe69ce777b84ae343"),
+  regista: 'James Cameron'
+}
