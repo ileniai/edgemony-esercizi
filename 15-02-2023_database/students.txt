@@ -1,0 +1,104 @@
+            //PASSAGGI IN CONSOLE
+
+            //MI CONNETTO AL MIO DATABASE
+database connesso
+node students.js
+^C
+            //CREARE COLLEZIONE STUDENT 
+
+MBP-di-Vincenzo:15-02-2023_database Vincy$ node students.js
+Collezione creata
+
+            //INSERISCO PIU' CAMPI
+
+MBP-di-Vincenzo:15-02-2023_database Vincy$ 
+MBP-di-Vincenzo:15-02-2023_database Vincy$ node students.js
+Numero di record inseriti: 5
+
+            //SELEZIONO UN SOLO DATO
+
+MBP-di-Vincenzo:15-02-2023_database Vincy$ 
+MBP-di-Vincenzo:15-02-2023_database Vincy$ node students.js
+Mario
+
+            //SELEZIONO TUTTI I DATI
+
+MBP-di-Vincenzo:15-02-2023_database Vincy$ 
+MBP-di-Vincenzo:15-02-2023_database Vincy$ node students.js
+[
+  {
+    _id: new ObjectId("63ecea4ada1f7b2bf2d8db47"),
+    nome: 'Mario',
+    cognome: 'Rossi',
+    matricola: '10',
+    corso: 'informatica',
+    esame: 'html'
+  },
+  {
+    _id: new ObjectId("63ecea4ada1f7b2bf2d8db48"),
+    nome: 'Carla',
+    cognome: 'Primo',
+    matricola: '23',
+    corso: 'informatica',
+    esame: 'css'
+  },
+  {
+    _id: new ObjectId("63ecea4ada1f7b2bf2d8db49"),
+    nome: 'Aurora',
+    cognome: 'Fober',
+    matricola: '40',
+    corso: 'informatica',
+    esame: 'javascript'
+  },
+  {
+    _id: new ObjectId("63ecea4ada1f7b2bf2d8db4a"),
+    nome: 'Mattia',
+    cognome: 'Bianchi',
+    matricola: '55',
+    corso: 'informatica',
+    esame: 'node'
+  },
+  {
+    _id: new ObjectId("63ecea4ada1f7b2bf2d8db4b"),
+    nome: 'Fabio',
+    cognome: 'Morelli',
+    matricola: '63',
+    corso: 'informatica',
+    esame: 'react'
+  }
+]
+
+            //SELEZIONO DATO CON FILTRO
+
+MBP-di-Vincenzo:15-02-2023_database Vincy$ 
+MBP-di-Vincenzo:15-02-2023_database Vincy$ node students.js
+[
+  {
+    _id: new ObjectId("63ecea4ada1f7b2bf2d8db49"),
+    nome: 'Aurora',
+    cognome: 'Fober',
+    matricola: '40',
+    corso: 'informatica',
+    esame: 'javascript'
+  }
+]
+
+            //MODIFICO DATO
+
+MBP-di-Vincenzo:15-02-2023_database Vincy$ 
+MBP-di-Vincenzo:15-02-2023_database Vincy$ node students.js
+record(s) aggiornati
+{
+    _id: new ObjectId("63ecea4ada1f7b2bf2d8db4b"),
+    nome: 'Fabio',
+    cognome: 'Pippo',
+    matricola: '800',
+    corso: 'informatica',
+    esame: 'react'
+  }
+
+            //CANCELLO DATO
+
+MBP-di-Vincenzo:15-02-2023_database Vincy$ 
+MBP-di-Vincenzo:15-02-2023_database Vincy$ node students.js
+record cancellato

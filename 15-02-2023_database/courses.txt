@@ -1,0 +1,90 @@
+            //PASSAGGI IN CONSOLE
+
+            //MI CONNETTO AL MIO DATABASE
+database connesso
+node students.js
+^C
+            //CREARE COLLEZIONE STUDENT 
+
+MBP-di-Vincenzo:15-02-2023_database Vincy$ node students.js
+Collezione creata
+
+            //INSERISCO PIU' CAMPI
+
+MBP-di-Vincenzo:15-02-2023_database Vincy$ 
+MBP-di-Vincenzo:15-02-2023_database Vincy$ node students.js
+Numero di record inseriti: 5
+
+            //SELEZIONO UN SOLO DATO
+
+MBP-di-Vincenzo:15-02-2023_database Vincy$ 
+MBP-di-Vincenzo:15-02-2023_database Vincy$ node students.js
+Economia
+
+            //SELEZIONO TUTTI I DATI
+
+MBP-di-Vincenzo:15-02-2023_database Vincy$ 
+MBP-di-Vincenzo:15-02-2023_database Vincy$ node courses.js
+[
+  {
+    _id: new ObjectId("63ecf97000b9631eb409c710"),
+    corso: 'Lingue',
+    materia: 'Inglese',
+    docenti: 'Franchini'
+  },
+  {
+    _id: new ObjectId("63ecf97000b9631eb409c711"),
+    corso: 'Economia',
+    materia: 'Marketing',
+    docenti: 'Paoli'
+  },
+  {
+    _id: new ObjectId("63ecf97000b9631eb409c712"),
+    corso: 'Ed.Fisica',
+    materia: 'Atletica',
+    docenti: 'Rampollo'
+  },
+  {
+    _id: new ObjectId("63ecf97000b9631eb409c713"),
+    corso: 'Edgemony',
+    materia: 'Node',
+    docenti: 'Ricci'
+  },
+  {
+    _id: new ObjectId("63ecf97000b9631eb409c714"),
+    corso: 'Medicina',
+    materia: 'Organi',
+    docenti: 'Sampiero'
+  }
+]
+
+            //SELEZIONO DATO CON FILTRO
+
+MBP-di-Vincenzo:15-02-2023_database Vincy$ 
+MBP-di-Vincenzo:15-02-2023_database Vincy$ node courses.js
+[
+  {
+    _id: new ObjectId("63ecf97000b9631eb409c713"),
+    corso: 'Edgemony',
+    materia: 'Node',
+    docenti: 'Ricci'
+  }
+]
+
+            //MODIFICO DATO
+
+MBP-di-Vincenzo:15-02-2023_database Vincy$ 
+MBP-di-Vincenzo:15-02-2023_database Vincy$ node courses.js
+record(s) aggiornati
+{
+    _id: new ObjectId("63ecf97000b9631eb409c712"),
+    corso: 'Ed.Fisica',
+    materia: 'Basket',
+    docenti: 'Wilson'
+  }
+
+            //CANCELLO DATO
+
+MBP-di-Vincenzo:15-02-2023_database Vincy$ 
+MBP-di-Vincenzo:15-02-2023_database Vincy$ node courses.js
+record cancellato

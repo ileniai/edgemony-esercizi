@@ -57,7 +57,7 @@ db.movies.insertMany([
     '5': ObjectId("63eb9bffe69ce777b84ae343")
   }
 }
-            //MIDIFCA DI UN ELEMENTO
+            //MODIFICA DI UN ELEMENTO
 
 db.movies.updateOne({titolo:'Cena con delitto'},
 {
