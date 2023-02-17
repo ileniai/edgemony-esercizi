@@ -1,17 +1,17 @@
 const express = require('express');
-let router = express.Router();
+let routerScarpe = express.Router();
 
 const mongoose = require('mongoose');                 
 const Articoli = mongoose.model('scarpeModel');
 
 
-router.get('/scarpe', (req, res) => {
-    res.render("update", {
-        viewTitle: "Inserisci una nota"
+routerScarpe.get('/', (req, res) => {
+    res.render("addupscarpe", {
+        viewTitle: "Inserisci un articolo"
     });
 });
 
-router.post('/scarpe', (req, res) => {
+routerScarpe.post('/scarpe', (req, res) => {
     if (req.body._id == '')
         insertRecord(req, res);
     else
@@ -33,7 +33,7 @@ function insertRecord(req, res) {
     articoli.save((err, doc) => {
     
         if (!err)
-            res.redirect('scarpe');
+            res.redirect('/addupscarpe');
             else
                 console.log(`Errore nell' inserimento: ${err}`);
         })
@@ -42,17 +42,17 @@ function insertRecord(req, res) {
 
 function updateRecord(req, res) {
     Articoli.updateOne({ _id: req.body._id }, req.body, { new: true }, (err, doc) => {
-        if (!err) { res.redirect('scarpe'); }
+        if (!err) { res.redirect('addupscarpe'); }
             else {
                 console.log('Errore durante l\' update : ' + err);
         }
     });
 }
 
-router.get('/scarpe/list', (req, res) => {
+routerScarpe.get('/scarpeList', (req, res) => {
     Articoli.find((err, docs) => {
         if (!err) {
-            res.render("scarpe", {
+            res.render("addupscarpe", {
                 articoliscarpe: docs
             });
         }
@@ -63,10 +63,10 @@ router.get('/scarpe/list', (req, res) => {
 });
 
 
-router.get('/scarpe/:id', (req, res) => {
+routerScarpe.get('/scarpe/:id', (req, res) => {
     Articoli.findById(req.params.id, (err, doc) => {
         if (!err) {
-            res.render("update", {
+            res.render("addupscarpe", {
                 viewTitle: "Aggiornamento",
                 nota: doc
             });
@@ -74,10 +74,10 @@ router.get('/scarpe/:id', (req, res) => {
     });
 });
 
-router.get('/scarpe/delete/:id', (req, res) => {
+routerScarpe.get('/scarpe/delete/:id', (req, res) => {
     Articoli.findByIdAndRemove(req.params.id, (err, doc) => {
         if (!err) {
-            res.redirect('/scarpe');
+            res.redirect('/addupscarpe');
         }
         else {
             console.log(`Errore ${err}`);
@@ -85,4 +85,4 @@ router.get('/scarpe/delete/:id', (req, res) => {
     });
 });
 
-module.exports = router;
+module.exports = routerScarpe;
