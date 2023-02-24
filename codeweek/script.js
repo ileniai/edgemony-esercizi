@@ -131,6 +131,7 @@ btnEl.addEventListener("click", () => {
      
      const cardDelete = () =>{
       const cardEl = document.querySelectorAll('.card')
+      
       cardEl.forEach((user) => user.remove());
      };
 
@@ -139,19 +140,31 @@ btnEl.addEventListener("click", () => {
       serchedName = event.target.value;
       console.log(serchedName);
 
+      let i = 0;//creo una variabile 0 per generare l'indice degli elementi
       GET('users').then((users)=>
         users.map((user) => {
-          
           let name = user.name;
-          let ints = name.split(' ');
-          
+          let ints = name.split(' ');//suddivide nome e cognome in base agli spazi
+          // console.log(ints)
           if (ints[0].includes(serchedName)) {
-            containerEl.append(createCard(user, 'search'));  
-          } else{'Attention! No users found'}  
-          
+            i = +1;//incremento il valore di 1
+            containerEl.append(createCard(user, 'search'));
+          }
         })
       )
-    })
- 
-  
+      if (i === 0) {
+        console.log('Attention! No users found');
+         /* const messaggio = qS('#messaggio')
+          const paragrafo = cE('p')
+          paragrafo.className = 'message'
+          paragrafo.textContent = 'Attention! No users found'
+          containerEl.appendChild(paragrafo)
+          console.log(messaggio)*/
+      }
+    }
+    )
     
+  
+   /*ho creato un div in cui ho inserito un paragrafo per mostrare il messaggio d'errore
+    ma questo non compare solo se inserisco un nome inesistente ma anche quando 
+    l'utente è presente*/
