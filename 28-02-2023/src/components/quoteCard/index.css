@@ -1,0 +1,30 @@
+.QuoteCard {
+    width: 200px;
+    height: 300px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.35);
+    border-radius: 12px;
+  }
+  
+  .QuoteCard img {
+    width: 200px;
+    height: 210px;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+    filter: saturate(1.2) contrast(1.1);
+  }
+  
+  .QuoteCard hr {
+    border: 0;
+    width: 100px;
+    border-bottom: 1px solid rgb(173, 230, 183);
+  }
+  
+  .QuoteCard__text-content {
+    padding: 10px 20px;
+  }
+
+  .author{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

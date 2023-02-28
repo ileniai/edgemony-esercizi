@@ -1,0 +1,19 @@
+.Footer{
+    height: 200px;
+    background-color: black;
+    color:white
+}
+
+.titoli{
+    display: flex;
+    justify-content: center;
+    padding:10px;
+    margin:5px;
+    
+}
+
+.hr_footer{
+    border: 0;
+    width: 145px;
+    border-bottom: 1px solid rgb(173, 230, 183);
+}

@@ -1,0 +1,21 @@
+.Header {
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .Header img {
+    border-radius: 15px;
+    height: 500px;
+    width: 100%;
+    
+  }
+  
+  .Header h2 {
+    position: absolute;
+    top: calc(50% + 90px);
+    height: 40px;
+    color: rgba(82, 157, 44, 0.751);
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.423);
+    font-size: 2rem;
+  }
