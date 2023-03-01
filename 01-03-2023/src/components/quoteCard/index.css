@@ -16,7 +16,7 @@
   .QuoteCard hr {
     border: 0;
     width: 100px;
-    border-bottom: 1px solid rgb(173, 230, 183);
+    border-bottom: 1px solid rgba(47, 49, 48, 0.459);
   }
   
   .QuoteCard__text-content {
@@ -24,6 +24,7 @@
   }
 
   .author{
+    font-family: Georgia, 'Times New Roman', Times, serif;
     display: flex;
     justify-content: center;
     align-items: center;

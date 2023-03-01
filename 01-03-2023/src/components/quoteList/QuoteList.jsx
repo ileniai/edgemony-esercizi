@@ -5,7 +5,7 @@ import "./index.css"
 const QuoteList = () =>{
     return(<div className="QuotesList">
             {quoteList.map((quote)=>(
-                <QuoteCard quoteData={quote} />
+                <QuoteCard quoteData={quote} key ={quote.id}/>
             ))}
         </div>
     )

@@ -1,15 +1,14 @@
 import QuoteList from "./components/quoteList/QuoteList"
+import Gallery from "./components/gallery"
 import Header from "./components/header"
 import Footer from "./components/footer"
-import Menu from "./components/menu"
 import "./app.css";
 
 const App = () => {
   return (
     <div className="App">
       <Header />
-      <Menu type = "Autori 💬 " />
-      <Menu type = "Preferiti 🤍 " />
+      <Gallery />
      <QuoteList />
      <Footer />
     </div>
