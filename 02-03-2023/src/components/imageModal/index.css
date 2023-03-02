@@ -1,0 +1,28 @@
+.ImageModal{
+    position: fixed;
+    top:0;
+    left:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+}
+
+.ImageModal_overlay{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(40, 40, 40);
+}
+
+.ImageModal img{
+    position: absolute;
+    width: 500px;
+    height: 350px;
+    object-fit: cover;
+    border: 1px dashed white;
+    padding:4px;
+
+}
