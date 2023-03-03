@@ -1,5 +1,5 @@
 export const quoteList = [
-  {
+ /* {
     "id": 1,
     "image": "https://images.pexels.com/photos/2681319/pexels-photo-2681319.jpeg?auto=compress&cs=tinysrgb&w=600",
     "quote": "Life isn’t about getting and having, it’s about giving and being.",
@@ -38,7 +38,7 @@ export const quoteList = [
     {
       "id": 7,
       "image":"https://images.pexels.com/photos/2821220/pexels-photo-2821220.jpeg?auto=compress&cs=tinysrgb&w=600",
-      "quote": "I’ve missed more than 9000 shots in my career. I’ve lost almost 300 games. 26 times I’ve been trusted to take the game winning shot and missed. I’ve failed over and over and over again in my life. And that is why I succeed.",
+      "quote": "I’ve missed more than 9000 shots in my career.",
       "author": "Michael Jordan"
       },
       {
@@ -80,7 +80,7 @@ export const quoteList = [
       {
       "id": 14,
       "image":"https://images.pexels.com/photos/2740955/pexels-photo-2740955.jpeg?auto=compress&cs=tinysrgb&w=600",
-      "quote": "Twenty years from now you will be more disappointed by the things that you didn’t do than by the ones you did do, so throw off the bowlines, sail away from safe harbor, catch the trade winds in your sails.  Explore, Dream, Discover.",
+      "quote": "Twenty years from now you will be more disappointed.",
       "author": "Mark Twain"
       },
       {
@@ -148,5 +148,5 @@ export const quoteList = [
       "image":"https://images.pexels.com/photos/5598296/pexels-photo-5598296.jpeg?auto=compress&cs=tinysrgb&w=600",
       "quote": "You can never cross the ocean until you have the courage to lose sight of the shore.",
       "author": "Christopher Columbus"
-      }
+      }*/
   ];

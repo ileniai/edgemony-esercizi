@@ -1,10 +1,10 @@
 import "./index.css";
 
-const Button = ({ text, onClick, isDisabled = false }) => {
+const Button = ({ text, clickFunc, isDisabled = false }) => {
   return (
     <button
       className={`Button  ${isDisabled ? "disabled" : null}`}
-      onClick={onClick}
+      onClick={clickFunc}
       disabled={isDisabled}
     >
       {text}

@@ -1,9 +1,9 @@
 import Button from "../button";
 import "./index.css";
 
-const Control = ({ listQuoteAuthor }) => {
+const Control = ({ quoteListAuthor }) => {
   const getQuotesNum = () =>
-    alert(`Il numero esatto di autori corrisponde a: ${listQuoteAuthor}`);
+    alert(`Il numero esatto di autori corrisponde a: ${quoteListAuthor}`);
 
   return (
     <div className="Control">

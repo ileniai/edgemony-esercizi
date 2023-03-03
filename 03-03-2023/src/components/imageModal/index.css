@@ -19,8 +19,8 @@
 
 .ImageModal img{
     position: absolute;
-    width: 500px;
-    height: 350px;
+    width: 400px;
+    height: 250px;
     object-fit: cover;
     border: 1px dashed white;
     padding:4px;
