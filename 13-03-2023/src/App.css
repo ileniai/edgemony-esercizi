@@ -1,3 +1,15 @@
+.title_calendar{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.App_calendar{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .App_title{
     display: flex;
     justify-content: center;
