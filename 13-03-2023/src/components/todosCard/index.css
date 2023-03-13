@@ -1,0 +1,43 @@
+.TodosCard{
+    width: 250px;
+    height: 250px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.35);
+    border-radius: 12px;
+    background-color: rgba(255, 228, 196, 0.443);
+}
+
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 60px;
+    background-color: rgba(165, 42, 42, 0.698);
+    border-radius: 3px;
+    margin: 0;
+    color: rgb(69, 17, 17);
+    cursor: pointer;
+}
+
+.todo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+    color: rgb(69, 17, 17);  
+}
+
+
+.todo_userId{
+    display: flex;
+    justify-content: flex-end;
+    padding:10px;
+    color: rgb(69, 17, 17);
+}
+
+.TodosCard hr{
+    border: 0;
+    width: 200px;
+    border-bottom: 1px solid rgb(69, 17, 17);
+}
