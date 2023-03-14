@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: rgb(65,63,112);
+  background: linear-gradient(90deg, 
+  rgba(65,63,112,1) 8%, 
+  rgba(49,78,117,0.8435968137254902) 43%, 
+  rgba(98,132,142,0.9741154813218391) 100%);
+  font-family: "Pacifico", cursive;
+}

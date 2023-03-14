@@ -1,0 +1,22 @@
+.TodoItem {
+    font-size: 0.9rem;
+    font-family:fantasy;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.35s;
+  }
+  
+  .TodoItem:hover {
+    color: white;
+    background-color: rgba(100, 132, 144, 1);
+  }
+  
+  .TodoItem_content {
+    padding: 4px 8px;
+  }
+  
+  .completed {
+    color: white;
+    background-color: rgba(100, 132, 144, 1);
+  }

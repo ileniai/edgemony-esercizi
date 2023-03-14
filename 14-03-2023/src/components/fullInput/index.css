@@ -1,0 +1,31 @@
+.FullInput {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .FullInput_One {
+    
+    padding: 8px 8px 8px 16px;
+    border: 0;
+    outline: none;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.35);
+    border-radius: 6px;
+    color: rgb(65,63,112);
+  }
+  
+  .FullInput_Two {
+    padding: 8px;
+    border: 0;
+    width: 100px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.35);
+    border-radius: 6px;
+    color: rgb(65,63,112);
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.35s;
+  }
+  
+  .FullInput_Two:hover {
+    background-color: rgba(100, 132, 144, 1);
+    color: white;
+  }
