@@ -1,0 +1,27 @@
+.MiniCardList {
+  
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    margin: 0 30px;
+    padding: 10px;
+    overflow-x: scroll;
+  }
+
+  .MiniCardList_title{
+    font-size: 1.8rem;
+    background-color: #ebbe9b;
+    border-radius: 6px;
+    padding:5px;
+    color:  rgba(0, 0, 0, 0.679);
+  }
+
+  .MiniCardList_card{
+    
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding: 10px;
+    overflow-x: scroll;
+  }
