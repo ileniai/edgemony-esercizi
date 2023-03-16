@@ -5,15 +5,16 @@ import { GrLogout } from "react-icons/gr";
 import { useState } from "react";
 import "./index.css";
 
-const Navbar = () => {
+const Navbar = ({setSearchInputValue}) => {
   const [inputValue, setInputValue] = useState("");
+  
 
   const onHandleInput = (e) => setInputValue(() => e.target.value);
 
   const onHandleSubmit = (e) => {
-    e.preventDefault();
-    // TODO: trasmettere il valore della input (inputValue) all'elemento di ricerca
-  };
+    e.preventDefault(),
+    setSearchInputValue(() => inputValue)
+      };
 
   return (
     <div className="Navbar">
@@ -32,6 +33,9 @@ const Navbar = () => {
           required
         />
       </form>
+      <div className="Navbar__cart">
+        <p> 🛒</p>
+      </div>
     </div>
   );
 };

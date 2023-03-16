@@ -2,9 +2,15 @@ import {textDescription } from "../../utils/function";
 import {titleDescription} from "../../utils/function";
 import "./index.css";
 
-const Card = ({ productData }) => {
+const Card = ({ productData, setModalContext }) => {
+
+  const onHandleClick = () => setModalContext (()=> ({
+    isVisibile: true,
+    productData,
+  }))
+
   return (
-    <div className="Card">
+    <div className="Card" onClick={onHandleClick}>
       <div className="Card__image">
       <img className="image"
         src={productData.thumbnail}

@@ -1,0 +1,124 @@
+.ProductModal {
+  
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.65);
+    z-index: 2;
+  }
+  
+  .ProductModal__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 60vw;
+    height: 65vh;
+    border-radius: 12px;
+    box-shadow: 0 0 12px #e0ae87d9;
+    background-color: rgba(255, 255, 255, 0.961);
+  }
+  
+  .ProductModal__text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ProductModal__text--title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    margin-bottom: 0;
+  }
+
+  .ProductModal__text--description{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .ProductModal__text--info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+
+  .ProductModal__text--info--category{
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: #e0ad8797;
+    border-radius: 6px;
+    padding: 3px;
+    
+  }
+
+  .ProductModal__text--info--price{
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+ 
+  .ProductModal__gallery {
+    
+    display: flex;
+    gap: 3px;
+    height: 230px;
+    width: 220px;
+    margin: 0;
+    padding: 10px;
+    cursor: pointer;
+    overflow-x: scroll;
+    padding-left: 0;
+  }
+  
+  .ProductModal__gallery img {
+    
+    width: 230px;
+    height: 230px;
+    border-radius: 12px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.35);
+    
+  }
+  
+  .ProductModal--cart {
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    background-color: #e0ad8797;
+    border: 0;
+    font-size: 2.6rem;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.35);
+    cursor: pointer;
+    transition: all 0.35s;
+  }
+
+  
+  .ProductModal--cart:hover {
+    transform: scale(1.2);
+  }
+  
+  .ProductModal--close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2rem;
+    color: #5e3f28db;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    transition: transform 1.35s;
+  }
+  
+  .ProductModal--close:hover {
+    color:  #5e3f28db;
+    transform: scale(1.2) rotate(359deg);
+  }
