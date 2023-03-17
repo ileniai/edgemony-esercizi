@@ -1,5 +1,4 @@
 .ProductModal {
-  
     position: fixed;
     top: 0;
     left: 0;
@@ -20,7 +19,7 @@
     width: 60vw;
     height: 65vh;
     border-radius: 12px;
-    box-shadow: 0 0 12px #e0ae87d9;
+    box-shadow: 0 0 12px #353434d9;
     background-color: rgba(255, 255, 255, 0.961);
   }
   
@@ -77,25 +76,27 @@
     padding-left: 0;
   }
   
-  .ProductModal__gallery img {
-    
+  .ProductModal__gallery-img {
     width: 230px;
     height: 230px;
     border-radius: 12px;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.35);
     
   }
+
+  .gallery-image{
+    border:4px solid red;
+  }
   
   .ProductModal--cart {
     position: absolute;
-    bottom: 40px;
-    right: 20px;
-    height: 60px;
-    width: 60px;
-    border-radius: 100%;
+    bottom: 20px;
+    right: 35px;
+    height: 35px;
+    width: 200px;
     background-color: #e0ad8797;
     border: 0;
-    font-size: 2.6rem;
+    font-size: 1rem;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.35);
     cursor: pointer;
     transition: all 0.35s;
@@ -120,5 +121,5 @@
   
   .ProductModal--close:hover {
     color:  #5e3f28db;
-    transform: scale(1.2) rotate(359deg);
+    transform: scale(1.2) rotate(20deg);
   }

@@ -1,3 +1,60 @@
-.ModalCart{
-    border:2px solid red;
-}
+.ModalCart {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: calc(120px + 10px + 40vh);
+    width: 50vw;
+    padding: 10px 30px;
+    margin-top: 50px;
+    background-color: #f1e7e0fd;
+    box-shadow: -1px -1px 4px 2px rgba(0, 0, 0, 0.35);
+    border-radius: 6px;
+    overflow-y: scroll;
+    transition: all 0.35s;
+  }
+  
+  .ModalCart__product {
+    position: relative;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .ModalCart__product--image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+
+  .ModalCart__product--title{
+    width: 80px;
+    height: 80px;
+    font-size: 1rem;
+  }
+
+  .ModalCart__product--price{
+    font-size: 1.2rem;
+  }
+  
+  .ModalCart__product--delete {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: transparent;
+    border: 6px;
+    box-shadow: -1px -1px 2px 1px rgba(0, 0, 0, 0.35);
+    cursor: pointer;
+    transition: transform 0.35s;
+  }
+  
+  .ModalCart__product--delete:hover {
+    transform: scale(1.2);
+  }
+
+  .ModalCart__product--tot{
+    display: flex;
+    justify-content: flex-end;
+  }

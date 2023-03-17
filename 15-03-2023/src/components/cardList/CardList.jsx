@@ -14,7 +14,7 @@ const CardList = ({ title, endpoint, setModalContext }) => {
   useEffect(() => {
     GET(endpoint).then((data) => setProductsList(() => data.products));
   }, []);
-
+  
   return (
     <div className="CardList">
       <h2>{title}</h2>

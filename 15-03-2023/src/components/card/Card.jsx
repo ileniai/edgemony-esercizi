@@ -10,7 +10,7 @@ const Card = ({ productData, setModalContext }) => {
   }))
 
   return (
-    <div className="Card" onClick={onHandleClick}>
+    <div className="Card" >
       <div className="Card__image">
       <img className="image"
         src={productData.thumbnail}
@@ -26,6 +26,7 @@ const Card = ({ productData, setModalContext }) => {
         </p>
         <p className="Card__text--category">{productData.category}</p>
         <p className="Card__text--price">$ {productData.price}</p>
+        <button onClick={onHandleClick} className="Card__btn--add">Visualizza prodotto</button>
       </div>
     </div>
   );

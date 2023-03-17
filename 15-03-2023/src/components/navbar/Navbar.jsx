@@ -1,19 +1,24 @@
-import { AiOutlineHome } from "react-icons/ai";
+import { AiOutlineHome, AiOutlineShoppingCart } from "react-icons/ai";
 import { RiAccountCircleLine } from "react-icons/ri";
-import { GrLogin } from "react-icons/gr";
-import { GrLogout } from "react-icons/gr";
+import { GrLogin, GrLogout } from "react-icons/gr";
 import { useState } from "react";
 import "./index.css";
 
-const Navbar = ({setSearchInputValue}) => {
+const Navbar = ({setSearchInputValue, cartListLength, setModalCartVisibility}) => {
   const [inputValue, setInputValue] = useState("");
   
+  
 
-  const onHandleInput = (e) => setInputValue(() => e.target.value);
+  const onHandleInput = (e) => 
+  setInputValue(() => e.target.value);
 
   const onHandleSubmit = (e) => {
     e.preventDefault(),
     setSearchInputValue(() => inputValue)
+      };
+
+      const onHandleCartClick = () => {
+        setModalCartVisibility(()=> true);
       };
 
   return (
@@ -34,7 +39,7 @@ const Navbar = ({setSearchInputValue}) => {
         />
       </form>
       <div className="Navbar__cart">
-        <p> 🛒</p>
+      <p className="Navbar__cart-cart" onClick={onHandleCartClick}>{cartListLength} <AiOutlineShoppingCart /> </p>
       </div>
     </div>
   );
