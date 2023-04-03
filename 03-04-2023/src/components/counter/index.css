@@ -1,0 +1,31 @@
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 50px;
+}
+
+h1{
+    margin: 0 50px;
+    font-size: 50px;
+    color: #fffbfc;
+}
+
+button{
+    width: 170px;
+    height: 60px;
+    outline: none;
+    border-style: none;
+    font-size: 50px;
+    background-color: #ffb5c0;
+    box-shadow: 4px 4px 20px #00000027, -4px -4px 20px #675272;
+    color: #fffbfc;
+}
+
+
+button:hover{
+    background-color:#ffb5c0;
+    color: #675272;
+    border-color: #000;
+}
