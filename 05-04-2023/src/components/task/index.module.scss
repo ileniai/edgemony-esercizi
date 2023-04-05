@@ -1,10 +1,12 @@
+@import "../../styles/variables/colors";
+
 .Task {
     display: flex;
     flex-direction: column;
     gap: 12px;
     padding: 16px;
     border-radius: 42px;
-    color: rgb(45, 7, 48);
+    color: $dark;
   
     .info {
       display: flex;
@@ -14,15 +16,15 @@
       button {
         width: 50px;
         border-radius: 100%;
-        background-color: rgb(105, 45, 112);
+        background-color:$trasparent;
       }
   
       button {
         border: 0;
-        color: rgb(45, 7, 48);
+        color: $dark;
         font-family: "Eagle Lake", cursive;
         font-size: 1.1rem;
-        filter: grayscale(0.1) contrast(0.9) saturate(1.6);
+        filter: $filter;
         cursor: pointer;
       }
     }

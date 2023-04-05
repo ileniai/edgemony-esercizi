@@ -1,7 +1,9 @@
+@import "./styles/variables/colors";
+
 .App {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 10px;
 
   .addTodo {
     position: fixed;
@@ -9,10 +11,10 @@
     left: calc(50vw - 50px + 6px);
     width: 70px;
     height: 70px;
-    background-color: rgb(184, 39, 194);
+    background-color: $skyblue;
     border-radius: 100%;
     border: 0;
-    color: white;
+    color: $white;
     font-size: 1.8rem;
     cursor: pointer;
   }

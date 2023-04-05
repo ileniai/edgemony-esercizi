@@ -1,10 +1,11 @@
+@import "../styles/variables/colors";
 @import url("https://fonts.googleapis.com/css2?family=Eagle+Lake&family=Poppins:wght@300;400;700&display=swap");
 
 body {
   margin: 0;
   padding: 6px;
-  background-color: rgb(45, 7, 48);
-  color: rgb(234, 234, 234);
+  background-color: $primary;
+  color:$light;
   font-family: "Poppins", sans-serif;
 
   p {

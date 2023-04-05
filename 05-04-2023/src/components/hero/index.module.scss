@@ -1,3 +1,4 @@
+@import "../../styles/variables/colors";
 .Hero {
     display: flex;
     flex-direction: column;
@@ -6,7 +7,7 @@
     h1 {
       font-size: 4rem;
       width: 60%;
-      color: rgb(184, 39, 194);
+      color:$secondary;
       font-weight: 400;
     }
   
@@ -24,7 +25,7 @@
   
         span {
           font-size: 0.8rem;
-          color: rgb(123, 105, 123);
+          color: $grey;
         }
       }
     }
